@@ -17,6 +17,7 @@ body{
 
 /*      Map        */
 
+
 /* Aquí están las media querys de dispositivos de anchura menores a 900px */
 
 @media(max-width:900px){
@@ -27,13 +28,4 @@ body{
 
     /*      Map         */
 
-}
-
-/* Aquí bloquea la media query cuando la orientación del dispositvo es horizontal */
-
-
-@media only screen and (orientation:portrait){
-    html {
-      transform: rotate(90deg);
-    }
 }

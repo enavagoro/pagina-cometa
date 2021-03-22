@@ -1,0 +1,138 @@
+/* Para eliminar los margenes de html por defecto */
+
+html{
+
+}
+
+body{
+  margin: 0%;
+  padding: 0%;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*     NavBar      */
+
+.nav-bar{
+    display: flex !important;
+    width: 100%;
+    background: #6864b9;
+    /*padding-bottom: 5%;*/
+  }
+  
+  .contenedor-logo-barra{
+    width: 15%;
+  }
+  
+  .logo-barra{
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 150px;
+    cursor: pointer;
+  }
+  
+  .nav-bar ul{
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .nav-bar li{
+    margin-top: 0%;
+    color: white;
+    margin-left: 10%;
+  }
+  
+  li a{
+    text-decoration: none;
+  }
+  
+  .link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px !important;
+    color: white;
+      font-weight: 400;
+    text-align: right;
+    cursor: pointer;
+  }
+  
+  .contenedor-boton-barra{
+    width: 15%;
+    margin-left: 65%;
+  }
+  
+  .link-boton{
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px !important;
+    color: #6864b9;
+    font-weight: 600;
+    text-align: center;
+    background: white;
+      padding: 8px;
+      border-radius: 5px;
+    cursor: pointer;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+    transition: 1s;
+    text-decoration: none;
+  }
+  
+  .link-boton:hover{
+    transition: 1s;
+    transform: scale(1.1);
+  }
+  
+  a{
+    text-decoration: none;
+  }
+
+/*      Home        */
+
+
+/*      Services        */
+
+
+/*      MisionAndVision        */
+
+
+/*     SliderBirds       */
+
+
+/*     Blog       */
+
+
+/*     Footer       */
+
+
+/* Aquí están las media querys de dispositivos de anchura menores a 900px */
+
+@media(max-width:900px){
+    /*     NavBar      */
+
+
+    /*      Home        */
+
+
+    /*      Services        */
+
+
+    /*      MisionAndVision        */
+
+
+    /*     SliderBirds       */
+
+
+    /*     Blog       */
+
+
+
+    /*     Footer       */  
+}
+
+/* Aquí bloquea la media query cuando la orientación del dispositvo es horizontal */
+
+
+@media only screen and (orientation:portrait){
+    html {
+      transform: rotate(90deg);
+    }
+}

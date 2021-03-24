@@ -23,6 +23,9 @@ var app = new Vue({
 var app = new Vue({
     el: '#services',
     data: {
+        services: [{name:'Asesorías y Desarrollo de Estudios Ambientales',img:['./img/hormiga.jpg','./img/hormiga.jpg','./img/hormiga.jpg']},
+                   {name:'Certificaciones Internacionales',img:['./img/certificados.jpg']},
+                   {name:'Transferencia Tecnológica en TICS',img:['./img/campo.jpg']}],
         message: 'Aquí es donde están los servicios'
     }
 });

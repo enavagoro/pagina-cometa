@@ -15,17 +15,24 @@ body{
 .nav-bar{
     display: flex !important;
     width: 100%;
-    background: #6864b9;
+    background: white;
+    position: fixed;
+    top: 0;
     /*padding-bottom: 5%;*/
   }
   
   .bar-logo-container{
-    width: 15%;
+    width: 300px;
+  }
+
+  .bar-logo-container a{
+    width: 300px;
+
   }
   
   .bar-logo{
     margin-top: 10%;
-    margin-left: 30%;
+    margin-left:calc((100% - 150px)/2);
     width: 150px;
     cursor: pointer;
   }
@@ -40,38 +47,62 @@ body{
     color: white;
     margin-left: 10%;
   }
+
+  .links-container{
+    width: 100%;
+    display: flex;
+  }
+
+  .links-container-left{
+    width: 70%;
+  }  
+
+  .links-container-right{
+    width: 40%;
+    display: flex;
+  }
   
   li a{
     text-decoration: none;
   }
   
   .link{
+    margin-top: 10px;
+    width: 90%;
+    margin-right: 10%;
     font-family: 'Roboto', sans-serif;
     font-size: 15px !important;
-    color: white;
-      font-weight: 400;
-    text-align: right;
+    color: #333333;
+    font-weight: 900;
+    text-align: center;
     cursor: pointer;
+    transition: .5s;
   }
+
+  .link:hover{
+    color: #649dcf;
+    transition: .5s;
+  }
+
   
   .bar-button-container{
-    width: 15%;
-    margin-left: 65%;
+    width: 200px;
+    margin-right: 20px;
   }
   
   .button-link{
     font-family: 'Roboto', sans-serif;
-    font-size: 17px !important;
-    color: #6864b9;
+    font-size: 15px !important;
+    color: white;
     font-weight: 600;
     text-align: center;
-    background: white;
-      padding: 8px;
-      border-radius: 5px;
+    background: #649dcf;
+    padding: 10px;
+    border-radius: 20px;
     cursor: pointer;
     width: 70%;
     margin-left: 15%;
-    margin-top: 10%;
+    margin-top: 15px;
     transition: 1s;
     text-decoration: none;
   }
@@ -88,7 +119,162 @@ body{
 /*      Home        */
 
 
+
+
 /*      Services        */
+
+  .services-section{
+
+  }
+
+  .services-container{
+    width: 100%;
+    display: flex;
+  }
+
+  .services-left-container{
+    width: 90%;
+
+  }
+/*
+  @media (min-width: 1100px) {
+    .services-container{
+      display: block;
+    }
+
+    .service-container {
+      display: inline-block;
+      vertical-align: top;
+      width: 300px;
+
+      margin-top: 2.5%;
+      padding: 0%;
+    }
+  
+    .image-container{
+      width: 100%;
+      margin-left: calc((100% - 300px)/2);
+      height: 300px;
+    }
+  
+    .image{
+      margin-left: calc((100% - 300px)/2);
+      width: 300px;
+      height: 300px;
+      border-radius: 10px;
+    }
+
+  }
+*/
+  .service-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 220px;
+    /*width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;*/
+    margin-top: 10%;
+    padding: 0%;
+    padding-left: 0%;
+  }
+
+  .image-container{
+    width: 100%;
+    margin-left: calc((100% - 200px)/2);
+    height: 200px;
+  }
+
+  .image{
+    margin-left: calc((100% - 200px)/2);
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+
+  .text-image-container{
+    width: 100%;
+    margin-left: calc((100% - 200px)/2);
+  }
+
+  .text-image{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+  }
+
+  .services-right-container{
+    width: 110%;
+
+    /*background: red;*/
+    display: flex;
+  }
+
+  .services-description{
+    width: 70%;
+    margin-top: 10%;
+    /*background: green;*/
+  }
+
+  .service-title-container{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15%;
+  }
+
+  .service-title{
+        /*text-align: center;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px !important;
+    font-weight: 600;
+    color: #649dcf;
+  }
+
+  .service-text-container{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 10%;
+  }
+
+  .service-text{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #333;
+    /*text-align: center;*/
+    font-weight: 500;
+  }
+
+  .button-service-container{
+    margin-top: 5%;
+  }
+
+  .button-service{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px !important;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    background: #649dcf;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 25%;
+    margin-left: 15%;
+    margin-top: 15px;
+    transition: 1s;
+    text-decoration: none;
+  }
+  
+  .button-service:hover{
+    transition: 1s;
+    transform: scale(1.1);
+  }
+
+  .lateral-image-container{
+    width: 30%;
+    background-repeat: no-repeat;
+    background-image: url("./img/bird2.png");
+  }
 
 
 /*      MisionAndVision        */
@@ -105,7 +291,20 @@ body{
 
 /* Aquí están las media querys de dispositivos de anchura menores a 900px */
 
+.cellphone{
+  display: none;
+}
+
 @media(max-width:900px){
+
+  .cellphone{
+    display: block;
+  }
+
+  .desktop{
+    display: none !important;
+  }
+
     /*     NavBar      */
 
 
@@ -113,6 +312,128 @@ body{
 
 
     /*      Services        */
+
+
+    .services-section{
+
+    }
+  
+    .services-container{
+      width: 100%;
+      display: block;
+    }
+  
+    .services-left-container{
+      width: 100%;
+  
+    }
+
+    .service-container {
+      display: inline-block;
+      vertical-align: top;
+      width: 220px;
+      margin-left: calc((100% - 220px)/2);
+      margin-top: 10%;
+      padding: 0%;
+      padding-left: 0%;
+    }
+  
+    .image-container{
+      width: 100%;
+      margin-left: calc((100% - 200px)/2);
+      height: 200px;
+    }
+  
+    .image{
+      margin-left: calc((100% - 200px)/2);
+      width: 200px;
+      height: 200px;
+      border-radius: 10px;
+    }
+  
+    .text-image-container{
+      width: 100%;
+      margin-left: calc((100% - 200px)/2);
+    }
+  
+    .text-image{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+    }
+  
+    .services-right-container{
+      width: 100%;
+      /*background: red;*/
+      display: flex;
+    }
+  
+    .services-description{
+      width: 70%;
+      margin-top: 10%;
+      /*background: green;*/
+    }
+  
+    .service-title-container{
+      width: 82%;
+      margin-left: 8%;
+      margin-top: 0%;
+    }
+  
+    .service-title{
+          /*text-align: center;*/
+      font-family: 'Roboto', sans-serif;
+      font-size: 22px !important;
+      font-weight: 600;
+      color: #649dcf;
+    }
+  
+    .service-text-container{
+      width: 82%;
+      margin-left: 8%;
+      margin-top: 10%;
+    }
+  
+    .service-text{
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      color: #333;
+      /*text-align: center;*/
+      font-weight: 500;
+    }
+  
+    .button-service-container{
+      margin-top: 5%;
+    }
+  
+    .button-service{
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px !important;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      background: #649dcf;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 35%;
+      margin-left: 8%;
+      margin-top: 15px;
+      transition: 1s;
+      text-decoration: none;
+    }
+    
+    .button-service:hover{
+      transition: 1s;
+      transform: scale(1.1);
+    }
+  
+    .lateral-image-container{
+      width: 30%;
+      background-repeat: no-repeat;
+      background-image: url("./img/bird2.png");
+    }
 
 
     /*      MisionAndVision        */

@@ -52,8 +52,8 @@
 
     <!--    Services    -->
     
-    <section class="services-section">
-        <div class="services-container" id="services">
+    <section class="services-section" id="services">
+        <div class="services-container">
             <div class="services-right-container cellphone">
                 <div class="services-description">
                     <div class="service-title-container">
@@ -121,10 +121,40 @@
 
     <!-- Slider Birds -->
 
-    <section>
-        <div class="element-test" id="sliderBirds">
-            <h1>{{message}}</h1>
-        </div>    
+    <section class="slider-section" id="sliderBirds">
+        <h1>{{message}}</h1>
+        <div class="slider-container">
+            <div class="slider-left desktop">
+                <div class="circle-left-image-container">
+                    <img class="circle-left-image" :src="birds[2].img[0]">
+                </div>
+            </div>
+            <div class="slider-center">
+                <div class="circle-center-image-container">
+                    <img class="circle-center-image" :src="birds[0].img[0]">
+                </div>
+                <div class="bird-name-container">
+                    <p class="bird-name">{{birds[0].name}}</p>
+                </div>
+                <div class="bird-rol-container">
+                    <p class="bird-rol">{{birds[0].rol}}</p>
+                </div>
+            </div>
+            <div class="slider-rigth desktop">
+                <div class="circle-rigth-image-container">
+                    <img class="circle-rigth-image" :src="birds[3].img[0]">
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-selector-container">
+            <div class="slider-selector-left-container">
+                <img class="slider-selector-left" src="./img/arrow-left.svg">
+            </div>
+            <div class="slider-selector-rigth-container">
+                <img class="slider-selector-rigth" src="./img/arrow-rigth.svg">
+            </div>
+        </div>
     </section>
 
     <!-- Blog 
@@ -137,12 +167,27 @@
 -->
 
     <!-- Footer -->
+<!--
+    <div class="top-footer">
+    </div>
+-->
+    <div class="footer">
+        <div class="contenedor-link">
+          <a href="#"><h1 class="link-footer">Contáctanos</h1></a>
+        </div>
+  
+        <div class="contenedor-link">
+          <a href="#" target="_blank"><h1 class="link-footer">+573113360423</h1></a>
+        </div>
+  
+        <div class="contenedor-link">
+          <a><h1 class="link-footer">webcometa@cometazul.com</h1></a>
+        </div>
 
-    <section>
-        <div class="element-test" id="footer">
-            <h1>{{message}}</h1>
-        </div>    
-    </section>
+        <div class="contenedor-link">
+            <a><h1 class="link-footer">CARRERA 52 A 58 C 40, <br>RIONEGRO, ANTIOQUIA, COLOMBIA</h1></a>
+        </div>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>

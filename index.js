@@ -46,7 +46,13 @@ var app = new Vue({
 var app = new Vue({
     el: '#sliderBirds',
     data: {
-        message: 'Aquí es donde está el slider de pájaros'
+        message: 'Aquí es donde está el slider de pájaros',
+        birds: [
+        {name:'Luz Marina Vergara Pulgarín',rol:'Directora Ejecutiva',img:['./img/marina.jpg']},
+        {name:'Lina María Rendón Cardona',rol:'Técnica Operativa',img:['./img/lina.jpg']},
+        {name:'Judy Marcela Osorio Quintero',rol:'Técnica Operativa',img:['./img/judy.jpg']},
+        {name:'Giovanni Rodriguez Román',rol:'Técnico Operativo',img:['./img/giovanni.jpg']},
+        {name:'Adriana María Vergara Pulgarín',rol:'Auxiliar Administrativa',img:['./img/adriana.jpg']}],
     }
 });
 

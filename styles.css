@@ -1,13 +1,13 @@
 /* Para eliminar los margenes de html por defecto */
 
 html{
-
+  scroll-behavior: smooth;
 }
 
 body{
   margin: 0%;
   padding: 0%;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;  
 }
 
 /*     NavBar      */
@@ -103,12 +103,12 @@ body{
     width: 70%;
     margin-left: 15%;
     margin-top: 15px;
-    transition: 1s;
+    transition: .5s;
     text-decoration: none;
   }
   
   .button-link:hover{
-    transition: 1s;
+    transition: .5s;
     transform: scale(1.1);
   }
   
@@ -136,36 +136,7 @@ body{
     width: 90%;
 
   }
-/*
-  @media (min-width: 1100px) {
-    .services-container{
-      display: block;
-    }
 
-    .service-container {
-      display: inline-block;
-      vertical-align: top;
-      width: 300px;
-
-      margin-top: 2.5%;
-      padding: 0%;
-    }
-  
-    .image-container{
-      width: 100%;
-      margin-left: calc((100% - 300px)/2);
-      height: 300px;
-    }
-  
-    .image{
-      margin-left: calc((100% - 300px)/2);
-      width: 300px;
-      height: 300px;
-      border-radius: 10px;
-    }
-
-  }
-*/
   .service-container {
     display: inline-block;
     vertical-align: top;
@@ -261,12 +232,12 @@ body{
     width: 25%;
     margin-left: 15%;
     margin-top: 15px;
-    transition: 1s;
+    transition: .5s;
     text-decoration: none;
   }
   
   .button-service:hover{
-    transition: 1s;
+    transition: .5s;
     transform: scale(1.1);
   }
 
@@ -282,12 +253,172 @@ body{
 
 /*     SliderBirds       */
 
+.slider-section{
+
+}
+
+.slider-container{
+  width: 100%;
+  display: flex;
+}
+
+.slider-left{
+  width: 100%;
+}
+
+.circle-left-image-container{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+
+.circle-left-image{
+  margin-left: calc((100% - 150px)/2);
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.slider-center{
+  width: 100%;
+}
+
+.circle-center-image-container{
+  width: 50%;
+  margin-left: 25%;
+}
+
+.circle-center-image{
+  margin-left: calc((100% - 300px)/2);
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+}
+
+.bird-name-container{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.bird-name{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px !important;
+  font-weight: 300;
+  font-style: italic;
+  color: #649dcf;
+}
+
+.bird-rol-container{
+  width: 80%;
+  margin-left: 10%;
+}
+
+.bird-rol{
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 19px !important;
+  font-weight: 400;
+  color: #333;
+}
+
+.slider-rigth{
+  width: 100%;
+}
+
+.circle-rigth-image-container{
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 15%;
+}
+
+.circle-rigth-image{
+  margin-left: calc((100% - 150px)/2);
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+}
+
+.slider-selector-container{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.slider-selector-left-container{
+  width: 50%;
+}
+
+.slider-selector-left{
+  width: 50px;
+  height: 50px;
+  margin-left: calc(90% - 50px);
+  cursor: pointer;
+  transition: .5s;
+}
+
+.slider-selector-left:hover{
+  transition: .5s;
+  transform: scale(1.2);
+}
+
+.slider-selector-rigth-container{
+  width: 50%;
+}
+
+.slider-selector-rigth{
+  width: 50px;
+  height: 50px;
+  margin-left: 10%;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.slider-selector-rigth:hover{
+  transition: .5s;
+  transform: scale(1.2);
+  
+}
+
+
 
 /*     Blog       */
 
 
 /*     Footer       */
+/*  
+  .top-footer{
+    height: 300px;
+    margin-top: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("https://media.istockphoto.com/photos/green-leaf-with-dew-on-dark-nature-background-picture-id1050634172?k=6&m=1050634172&s=612x612&w=0&h=C6CWho9b4RDhCqvaivYOLV2LK6FzygYpAyLPBlF1i2c=");
+  }
+  */
 
+  .footer {
+    display: flex;
+    height: 70px;
+    background: #f16c94;
+    margin-top: 10%;
+    /*border-top: 1px solid #333;*/
+  }
+
+  .contenedor-link {
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 0%;
+    margin-left: 5%;
+  }
+
+  .link-footer{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px !important;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+  }
 
 /* Aquí están las media querys de dispositivos de anchura menores a 900px */
 
@@ -420,12 +551,12 @@ body{
       width: 35%;
       margin-left: 8%;
       margin-top: 15px;
-      transition: 1s;
+      transition: .5s;
       text-decoration: none;
     }
     
     .button-service:hover{
-      transition: 1s;
+      transition: .5s;
       transform: scale(1.1);
     }
   
